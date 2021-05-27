@@ -13,6 +13,7 @@ import { NavigationBar } from "./components/NavigationBar";
 import Club from "./pages/Club";
 import Schedule from "./pages/Schedule";
 import Store from "./pages/Store";
+import AddInstructor from "./pages/Add";
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
               <Route exact path="/instructors" component={Instructors} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/store" component={Store} />
+              <Route exact path="/add" component={AddInstructor} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>

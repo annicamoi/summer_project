@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installed packages
+
+Some frontend packages are missing from this list currently.
+
+Backend boys installed: (bootstrap, react-router-dom,) axios BACKEND: express, mongoose, cors
+
+possibly needed: nodemon package(to run server.js - you might already have it), Mongo Shell
+
 ## Available Scripts
 
 In the project directory, you can run:
