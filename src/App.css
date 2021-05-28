@@ -85,6 +85,14 @@ a:hover {
   border-radius: 0rem;
 }
 
-.navbar {
+.navbarHeader {
   margin-bottom: 2rem;
+  background-color: #0c0032 !important;
+  color: white;
+}
+
+.navbarHeader a,
+.navbarHeader .navbar-brand,
+.navbarHeader .navbar-nav .nav-link {
+  color: white !important;
 }
