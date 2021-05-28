@@ -77,3 +77,10 @@ a:hover {
 .card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 0;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
