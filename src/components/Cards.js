@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { CardDeck, Card, ListGroup, ListGroupItem } from "react-bootstrap";
 import CardSingle from "./CardSingle";
 
@@ -11,7 +11,7 @@ const Cards = () => {
 
     useEffect(() => {
         fetch("//localhost:3001/instructors").then(res => {
-            if(res.ok) {
+            if (res.ok) {
                 return res.json();
             }
         }).then(jsonRes => {
@@ -21,14 +21,14 @@ const Cards = () => {
 
     return (
         <div>
-            <h3>Ohjaajat</h3>
-                {instructors.map(instructor => 
-                    <div>
-                        <h4>{instructor.name}</h4>
-                        <p>{instructor.rank}</p>
-                        <p>{instructor.title}</p>
-                    </div>
-                )}
+            <h2>Ohjaajat</h2>
+            {instructors.map(instructor =>
+                <div>
+                    <h4>{instructor.name}</h4>
+                    <p>{instructor.rank}</p>
+                    <p>{instructor.title}</p>
+                </div>
+            )}
 
             <CardDeck>
                 <Card style={{ width: '18rem' }}>

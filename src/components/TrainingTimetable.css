@@ -1,0 +1,77 @@
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  background-color: #0c0032;
+  color: white;
+  border-color: #0c0032;
+}
+
+element.style {
+}
+.rbc-btn-group > button:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+  background-color: #0c0032;
+  color: white;
+  border-color: #0c0032;
+}
+
+.rbc-toolbar button:hover {
+  color: white;
+  background-color: #0c0032;
+  border-color: #0c0032;
+}
+
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus {
+  color: white;
+  background-color: #0c0032;
+  border-color: #0c0032;
+}
+
+/* Tapahtumamerkintä */
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0;
+  padding: 2px 5px;
+  background-color: #0c0032;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/* Kuluvan päivän taustaväri */
+
+.rbc-today {
+  background-color: #3500d3;
+}
+
+.rbc-show-more {
+  background-color: #0c0032;
+  color: white;
+  z-index: 4;
+  font-weight: bold;
+  font-size: 85%;
+  height: auto;
+  line-height: normal;
+}
+
+.rbc-show-more:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
