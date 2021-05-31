@@ -6,6 +6,8 @@ import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
+import "./TrainingTimetable.css";
+
 const locales = {
     "en-US": require("date-fns/locale/en-US")
 };
@@ -18,13 +20,18 @@ const localizer = dateFnsLocalizer({
     locales
 });
 
+/* Tähän voi merkata kalenteritapahtumat */
+
 const myEventsList = [
-    { start: new Date(), end: new Date(), title: "special event" }
+    { start: new Date(), end: new Date(), title: " 18 Junnut" },
+    { start: new Date(), end: new Date(), title: "19 Sennut" },
+    { start: new Date(), end: new Date(), title: "20 Vyökoe" }
 ];
 
 const TrainingTimetable = () => {
     return (
         <div className="Calendar">
+            <h2>Harjoitusajat</h2>
             <Calendar
                 localizer={localizer}
                 events={myEventsList}
