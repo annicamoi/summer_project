@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import React, { useState } from 'react';
 import axios from "axios";
 
 function AddInstructor() {
@@ -10,7 +10,7 @@ function AddInstructor() {
     })
 
     function handleChange(event) {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
         setInput(prevInput => {
             return {
                 ...prevInput,
@@ -26,9 +26,9 @@ function AddInstructor() {
             rank: input.rank,
             title: input.title
         }
-        axios.post("http://localhost:3001/add", newInstructor);
+        axios.post("https://agile-beach-68747.herokuapp.com/add", newInstructor);
     }
-    
+
 
 
     return <div className="container">
@@ -44,12 +44,12 @@ function AddInstructor() {
                 <label htmlFor="rank">Vyöarvo</label>
                 <textarea onChange={handleChange} className="form-control" name="rank" value={input.rank} autoComplete="off"></textarea>
             </div>
-            
+
             <div className="form-group">
                 <label htmlFor="title">Arvonimet</label>
                 <textarea onChange={handleChange} className="form-control" name="title" value={input.title} autoComplete="off" placeholder="esim. sabumnim, pääopettaja"></textarea>
             </div>
-            
+
             <button onClick={handleClick} className="btn btn-lg btn-info">Lähetä</button>
         </form>
 
