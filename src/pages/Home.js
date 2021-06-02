@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 export const Home = () => (
   <div>
-    <h2>Tervetuloa Taekwondo! </h2>
+    <h2>Tervetuloa Taekwon-Don pariin! </h2>
     <p>
       Lorizzle things dolor sizzle amizzle, shut the shizzle up adipiscing elit.
       Nullizzle crazy velit, yo volutpizzle, suscipizzle quis, fo shizzle vel,
@@ -44,7 +44,7 @@ export const Home = () => (
       at, nizzle, leo. Sure pimpin' sem, gangsta sizzle amet, interdum boofron,
       dignissizzle phat, arcu. Aenizzle egizzle that's the shizzle izzle fo
       shizzle ullamcorper own yo'. Donec quam. Mauris shit urna, tempor hizzle,
-      scelerisque venenatizzle, owned nec, felizzle. Etizzle gravida.
-    </p>
+      scelerisque venenatizzle, owned nec, felizzle. Etizzle gravida.     
+    </p>
   </div>
 );

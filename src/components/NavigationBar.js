@@ -32,37 +32,37 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/">Etusivu</Link>
+              <Link to="/">ETUSIVU</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/club">Seura</Link>
+              <Link to="/club">SEURA</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/schedule">Harjoitukset</Link>
+              <Link to="/schedule">HARJOITUKSET</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">Taekwon-do</Link>
+              <Link to="/about">TAEKWON-DO</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/instructors">Ohjaajat</Link>
+              <Link to="/instructors">OHJAAJAT</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/contact">Yhteystiedot</Link>
+              <Link to="/contact">YHTEYSTIEDOT</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/store">Varustekauppa</Link>
+              <Link to="/store">VARUSTEKAUPPA</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
