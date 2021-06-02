@@ -29,7 +29,7 @@ const CardSingle = () => {
             <>
                 <div>
                     <h1>{instructor.name}</h1>
-                    <img src="" alt={instructor.name} />
+                    <img src="https://source.unsplash.com/42f0omhWez4" alt={instructor.name} />
                     {descLong}
                     <p>{instructor.title}</p>
                     <p>{instructor.rank}</p>

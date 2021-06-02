@@ -1,0 +1,680 @@
+<p>Varustekauppa on toteutettu yhteisty&ouml;ss&auml; Budoland Finlandin kanssa, joka vastaa toimituksista sek&auml; mahdollisien reklamaatioiden hoidosta. Kaikissa kysymyksiss&auml; otathan yhteytt&auml; Budoland Finlandin <span style="color: #ff0000;"><strong><a href="https://budoland.fi/pages/ota-yhteytta" target="_blank" title="asiakaspalvelu" rel="noopener noreferrer" style="color: #ff0000;">asiakaspalveluun</a></strong></span>.</p>
+
+</br>
+<h2> </h2>
+</br>
+<div id='collection-component-93e4058a40e'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'budolandfi.myshopify.com',
+          storefrontAccessToken: '3e04d2eb8bb55ebd1cfcdcd82cdb055c',
+        });
+var attributeKey = "kumppaniyritys";
+var attributeValue = window.location.hostname;
+var shopifyDomain = "budolandfi.myshopify.com";
+
+try {
+  for (var checkoutId, key, i = 0; i < localStorage.length; ++i) {
+    key = localStorage.key(i);
+    if (key.match(shopifyDomain + '.checkoutId')) {
+    checkoutId = localStorage.getItem(key);
+  }
+}
+
+  client.checkout.fetch(checkoutId).then((checkout) => {
+    var obj = {};
+    obj.key = attributeKey;
+    obj.value = attributeValue;
+    var input = {
+      customAttributes: [obj]
+    };
+    client.checkout.updateAttributes(checkoutId, input).then((checkout) => {});
+  });
+}
+catch (err) {
+console.log('checkout not updated');
+}
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('collection', {
+            id: 68075454506,
+            node: document.getElementById('collection-component-93e4058a40e'),
+            moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+            options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Tuotetiedot"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "imgWrapper": {
+          "position": "relative",
+          "height": "0",
+          "padding-top": "calc(75% + 15px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        }
+      },
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "70px",
+        "padding-right": "70px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "description": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "price": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "compareAt": {
+        "color": "#000000",
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "title": "Ostoskori",
+      "total": "Summa yhteens&auml;",
+      "notice": "Toimitus ja alennuskoodit sy&ouml;tet&auml;&auml;n kassalla",
+      "button": "Kassalle",
+      "empty": "Ostoskorisi on tyhj&auml;"
+    },
+    "styles": {
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Ostoskoriin"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "70px",
+        "padding-right": "70px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "description": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "price": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#1400ff",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "count": {
+        "font-size": "18px",
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "color": "#000000"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+</br>
+<h2> </h2>
+</br>
+<div id='collection-component-0ca107af2dd'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'budolandfi.myshopify.com',
+          storefrontAccessToken: '3e04d2eb8bb55ebd1cfcdcd82cdb055c',
+        });
+var attributeKey = "kumppaniyritys";
+var attributeValue = window.location.hostname;
+var shopifyDomain = "budolandfi.myshopify.com";
+
+try {
+  for (var checkoutId, key, i = 0; i < localStorage.length; ++i) {
+    key = localStorage.key(i);
+    if (key.match(shopifyDomain + '.checkoutId')) {
+    checkoutId = localStorage.getItem(key);
+  }
+}
+
+  client.checkout.fetch(checkoutId).then((checkout) => {
+    var obj = {};
+    obj.key = attributeKey;
+    obj.value = attributeValue;
+    var input = {
+      customAttributes: [obj]
+    };
+    client.checkout.updateAttributes(checkoutId, input).then((checkout) => {});
+  });
+}
+catch (err) {
+console.log('checkout not updated');
+}
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('collection', {
+            id: 68075192362,
+            node: document.getElementById('collection-component-0ca107af2dd'),
+            moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+            options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Tuotetiedot"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "imgWrapper": {
+          "position": "relative",
+          "height": "0",
+          "padding-top": "calc(75% + 15px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        }
+      },
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "70px",
+        "padding-right": "70px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "description": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "price": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "compareAt": {
+        "color": "#000000",
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "title": "Ostoskori",
+      "total": "Summa yhteens�",
+      "notice": "Toimitus ja alennuskoodit sy�tet��n kassalla",
+      "button": "Kassalle",
+      "empty": "Ostoskorisi on tyhj�"
+    },
+    "styles": {
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Ostoskoriin"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#1400ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "padding-left": "70px",
+        "padding-right": "70px",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "description": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "price": {
+        "color": "#000000",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#1400ff",
+        ":hover": {
+          "background-color": "#2200ff"
+        },
+        ":focus": {
+          "background-color": "#2200ff"
+        },
+        "font-weight": "normal"
+      },
+      "count": {
+        "font-size": "18px",
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "color": "#000000"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+</br>
+<h2> </h2>
+</br>
+
+<p>Seuraavista linkeist&auml; voit tutustua tarkemmin verkkokaupan tietosuojaan sek&auml; maksu-, toimitus- ja palveluehtoihin.</p>
+<p><a href="https://budoland.fi/pages/tietosuoja" target="_blank" rel="noopener noreferrer"><span style="color: #ff0000;">tietosuoja</span></a>   <a href="https://budoland.fi/pages/maksuehdot" target="_blank" rel="noopener noreferrer"><span style="color: #ff0000;">maksuehdot</span></a>   <span style="color: #ff0000;"><a style="color: #ff0000;" href="https://budoland.fi/pages/toimitusehdot" target="_blank" rel="noopener noreferrer">toimitusehdot</a></span>   <a href="https://budoland.fi/pages/palveluehdot" target="_blank" rel="noopener noreferrer"><span style="color: #ff0000;">palveluehdot</span></a></p>
