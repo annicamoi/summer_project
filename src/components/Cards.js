@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CardDeck, Card, ListGroup, ListGroupItem } from "react-bootstrap";
-import CardSingle from "./CardSingle";
+
 
 const Cards = () => {
   const [instructors, setInstructors] = useState([
@@ -11,6 +11,7 @@ const Cards = () => {
     },
   ]);
 
+<<<<<<< HEAD
   useEffect(() => {
     fetch("//localhost:3001/instructors")
       .then((res) => {
@@ -22,6 +23,17 @@ const Cards = () => {
         setInstructors(jsonRes);
       });
   });
+=======
+    useEffect(() => {
+        fetch("https://agile-beach-68747.herokuapp.com/instructors").then(res => {
+            if (res.ok) {
+                return res.json();
+            }
+        }).then(jsonRes => {
+            setInstructors(jsonRes)
+        });
+    });
+>>>>>>> 0547d788b91e4282357fdb87e7d998e7d47a1a4a
 
   return (
     <div>

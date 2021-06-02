@@ -14,6 +14,7 @@ import Club from "./pages/Club";
 import Schedule from "./pages/Schedule";
 import Store from "./pages/Store";
 import AddInstructor from "./pages/Add";
+import "./custom.scss";
 
 class App extends Component {
   render() {
