@@ -3,7 +3,7 @@ import InstructorCard from "./InstructorCard";
 
 const InstructorList = ({ instructors }) => {
     return (
-        <div>
+        <div className="cardlist">
             {instructors.map((instructor) => (
                 <InstructorCard
                     key={instructor.id}
