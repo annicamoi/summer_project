@@ -20,7 +20,7 @@ const localizer = dateFnsLocalizer({
     locales
 });
 
-/* Tähän voi merkata kalenteritapahtumat */
+/* Tähän voi merkata kalenteritapahtumat, kuukausi aina yhden vähemmän eli tammikuu 0 jne. */
 
 const myEventsList = [
     { start: new Date(2021, 5, 3, 18), end: new Date(2021, 5, 3, 19), title: " 18 Junnut" },

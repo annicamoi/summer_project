@@ -29,7 +29,7 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
       <Container>
         <h1>Taekwon-Do</h1>
-        <p>Espoon TKD seura Ry</p>
+        <p>Espoon TKD Seura Ry</p>
       </Container>
     </Jumbo>
   </Styles>
