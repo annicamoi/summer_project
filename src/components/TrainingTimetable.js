@@ -20,12 +20,15 @@ const localizer = dateFnsLocalizer({
     locales
 });
 
-/* Tähän voi merkata kalenteritapahtumat */
+/* Tähän voi merkata kalenteritapahtumat, kuukausi aina yhden vähemmän eli tammikuu 0 jne. */
 
 const myEventsList = [
-    { start: new Date(), end: new Date(), title: " 18 Junnut" },
-    { start: new Date(), end: new Date(), title: "19 Sennut" },
-    { start: new Date(), end: new Date(), title: "20 Vyökoe" }
+    { start: new Date(2021, 5, 3, 18), end: new Date(2021, 5, 3, 19), title: " 18 Junnut" },
+    { start: new Date(2021, 5, 6, 19), end: new Date(2021, 5, 6, 20), title: "19 Sennut" },
+    { start: new Date(2021, 5, 6, 20), end: new Date(2021, 5, 6, 21), title: "20 Ulkotreenit" },
+    { start: new Date(2021, 5, 10, 18), end: new Date(2021, 5, 10, 19), title: " 18 Junnut" },
+    { start: new Date(2021, 5, 12, 12), end: new Date(2021, 5, 12, 13), title: "12 Vyökoe" },
+    { start: new Date(2021, 5, 22, 20), end: new Date(2021, 5, 22, 21), title: "20 Vyökoe" }
 ];
 
 const TrainingTimetable = () => {
