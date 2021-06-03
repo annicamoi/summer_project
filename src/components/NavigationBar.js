@@ -31,38 +31,38 @@ export const NavigationBar = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/">ETUSIVU</Link>
+            <Nav.Link >
+              <Link className="navlink" to="/">Etusivu</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/club">SEURA</Link>
+              <Link className="navlink" to="/club">Seura</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/schedule">HARJOITUKSET</Link>
+              <Link className="navlink" to="/schedule">Harjoitukset</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">TAEKWON-DO</Link>
+              <Link className="navlink" to="/about">Taekwon-do</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/instructors">OHJAAJAT</Link>
+              <Link className="navlink" to="/instructors">Ohjaajat</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/contact">YHTEYSTIEDOT</Link>
+              <Link className="navlink" to="/contact">Yhteystiedot</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/store">VARUSTEKAUPPA</Link>
+              <Link className="navlink" to="/store">Varustekauppa</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
