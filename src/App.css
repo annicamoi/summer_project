@@ -38,7 +38,7 @@
 }
 
 .bg-dark {
-  background-color: #0c0032 !important;
+  background-color: #282828 !important;
 }
 
 .iGULvN .navbar {
@@ -80,7 +80,7 @@ a:hover {
 
 .navbarHeader {
   margin-bottom: 2rem;
-  background-color: #0c0032 !important;
+  background-color: #282828 !important;
   color: white;
 }
 
@@ -88,6 +88,7 @@ a:hover {
 .navbarHeader .navbar-brand,
 .navbarHeader .navbar-nav .nav-link {
   color: white !important;
+  text-decoration: none;
 }
 
 .navbar-light .navbar-toggler-icon {
