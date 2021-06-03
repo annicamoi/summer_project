@@ -45,6 +45,37 @@ $font-family-sans-serif: "Work Sans", sans-serif !default;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/* Navigoinnin linkeistä alleviivaukset pois */
+
 .navlink {
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pudotusvalikon muotoilut */
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  list-style: none;
+  background-color: #0c0032;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white;
+  background-color: #3500d3;
 }
