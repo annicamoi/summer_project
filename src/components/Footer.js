@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 const Footer = () => {
   return (
     <Container fluid="true" className="footer">
-      <Footer class="mainfooter" role="contentinfo">
+      <footer class="mainfooter" role="contentinfo">
         <div class="footer-middle">
           <div class="container">
             <div class="row">
@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </Footer>
+      </footer>
     </Container>
   );
 };
