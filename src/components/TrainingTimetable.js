@@ -5,11 +5,12 @@ import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import { fi } from 'date-fns/locale';
 
 import "./TrainingTimetable.css";
 
 const locales = {
-    "en-US": require("date-fns/locale/en-US")
+    "fi": require("date-fns/locale/fi"),
 };
 
 const localizer = dateFnsLocalizer({
@@ -17,7 +18,7 @@ const localizer = dateFnsLocalizer({
     parse,
     startOfWeek,
     getDay,
-    locales
+    locales,
 });
 
 /* Tähän voi merkata kalenteritapahtumat, kuukausi aina yhden vähemmän eli tammikuu 0 jne. */
@@ -29,7 +30,8 @@ const myEventsList = [
     { start: new Date(2021, 5, 6, 21), end: new Date(2021, 5, 6, 22), title: "21 Hallituksen kokous" },
     { start: new Date(2021, 5, 10, 18), end: new Date(2021, 5, 10, 19), title: " 18 Junnut" },
     { start: new Date(2021, 5, 12, 12), end: new Date(2021, 5, 12, 13), title: "12 Vyökoe" },
-    { start: new Date(2021, 5, 22, 20), end: new Date(2021, 5, 22, 21), title: "20 Vyökoe" }
+    { start: new Date(2021, 5, 22, 20), end: new Date(2021, 5, 22, 21), title: "20 Vyökoe" },
+    { locale: fi }
 ];
 
 const TrainingTimetable = () => {

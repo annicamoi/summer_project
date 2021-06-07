@@ -1,7 +1,6 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
-import taekwondoImage from "../assets/img/taekwondoImage.jpg";
 import header_landscape from "../assets/img/header_landscape.mp4";
 
 const Styles = styled.div`
