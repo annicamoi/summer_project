@@ -10,9 +10,7 @@ $font-family-sans-serif: "Work Sans", sans-serif !default;
 @import "~bootstrap/scss/bootstrap.scss";
 
 .jumbotron {
-  padding: 2rem 1rem;
   margin-bottom: 0;
-  background-image: url("./assets/img/handsImage.jpg");
   border-radius: 0rem;
 }
 
@@ -20,18 +18,6 @@ $font-family-sans-serif: "Work Sans", sans-serif !default;
   min-height: 50vh;
   position: relative;
   background-color: grey;
-}
-
-.jumbotron image {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  filter: greysscale(100%);
 }
 
 .jumbotron .row {
@@ -191,3 +177,5 @@ ul.social-network li {
 .social-network a {
   background-color: #f9f9f9;
 }
+
+

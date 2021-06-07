@@ -2,10 +2,11 @@ import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
 import taekwondoImage from "../assets/img/taekwondoImage.jpg";
+import header_landscape from "../assets/img/header_landscape.mp4";
 
 const Styles = styled.div`
   .jumbo {
-    // background: url(${taekwondoImage}) no-repeat fixed bottom;
+    // background: url(${header_landscape}) no-repeat fixed bottom;
     background-size: cover;
     color: #ccc;
     height: 200px;
@@ -32,5 +33,5 @@ export const Jumbotron = () => (
         <p>Espoon TKD Seura Ry</p>
       </Container>
     </Jumbo>
-  </Styles>
+  </Styles >
 );
