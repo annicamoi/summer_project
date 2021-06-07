@@ -10,7 +10,7 @@ import { fi } from 'date-fns/locale';
 import "./TrainingTimetable.css";
 
 const locales = {
-    "fi": require("date-fns/locale/fi"),
+    'fi': fi
 };
 
 const localizer = dateFnsLocalizer({
@@ -39,6 +39,7 @@ const TrainingTimetable = () => {
         <div className="Calendar">
             <h2>Harjoitusajat</h2>
             <Calendar
+                culture={"fi"}
                 localizer={localizer}
                 events={myEventsList}
                 startAccessor="start"
