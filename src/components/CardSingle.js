@@ -17,7 +17,7 @@ const CardSingle = () => {
     let instructorData = undefined;
 
     if (!instructor) {
-        instructorData = <h2>Loading information...</h2>
+        instructorData = <h2>Pieni hetki...</h2>
     }
 
     if (instructor) {
