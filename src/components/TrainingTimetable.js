@@ -31,7 +31,6 @@ const myEventsList = [
     { start: new Date(2021, 5, 10, 18), end: new Date(2021, 5, 10, 19), title: " 18 Junnut" },
     { start: new Date(2021, 5, 12, 12), end: new Date(2021, 5, 12, 13), title: "12 Vyökoe" },
     { start: new Date(2021, 5, 22, 20), end: new Date(2021, 5, 22, 21), title: "20 Vyökoe" },
-    { locale: fi }
 ];
 
 const TrainingTimetable = () => {
