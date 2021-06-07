@@ -11,72 +11,57 @@ const Footer = () => {
             <div class="row">
               <div class="col-md-3 col-sm-6">
                 <div class="footer-pad">
-                  <h4>Heading 1</h4>
+                  <h4>Yhteystiedot</h4>
                   <ul class="list-unstyled">
                     <li>
                       <a href="#"></a>
                     </li>
                     <li>
-                      <a href="#">Payment Center</a>
+                      <a href="#">Puhelinnumero</a>
                     </li>
                     <li>
-                      <a href="#">Contact Directory</a>
+                      <a href="#">Osoite</a>
                     </li>
                     <li>
-                      <a href="#">Forms</a>
-                    </li>
-                    <li>
-                      <a href="#">News and Updates</a>
-                    </li>
-                    <li>
-                      <a href="#">FAQs</a>
+                      <a href="#">Sähköposti</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="footer-pad">
-                  <h4>Heading 2</h4>
+                  <h4>Sidosryhmät</h4>
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">Website Tutorial</a>
+                      <a href="#">MyClub - linkki </a>
                     </li>
                     <li>
-                      <a href="#">Accessibility</a>
+                      <a href="#">SITF Jäsenseura - linkki</a>
                     </li>
                     <li>
-                      <a href="#">Disclaimer</a>
+                      <a href="#">ITF - linkki</a>
+                    </li>
+                    <li>
+                      <a href="#">Espoon TKD</a>
                     </li>
                     <li>
                       <a href="#">Privacy Policy</a>
                     </li>
-                    <li>
-                      <a href="#">FAQs</a>
-                    </li>
-                    <li>
-                      <a href="#">Webmaster</a>
-                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="footer-pad">
-                  <h4>Heading 3</h4>
+                  <h4>Tutustu meihin</h4>
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">Parks and Recreation</a>
+                      <a href="#">Youtube - linkki</a>
                     </li>
                     <li>
-                      <a href="#">Public Works</a>
+                      <a href="#">Uutiset ja tiedotteet</a>
                     </li>
                     <li>
-                      <a href="#">Police Department</a>
-                    </li>
-                    <li>
-                      <a href="#">Fire</a>
-                    </li>
-                    <li>
-                      <a href="#">Mayor and City Council</a>
+                      <a href="#">FAQs</a>
                     </li>
                     <li>
                       <a href="#"></a>
@@ -85,7 +70,7 @@ const Footer = () => {
                 </div>
               </div>
               <div class="col-md-3">
-                <h4>Follow Us</h4>
+                <h4>Seuraa meitä</h4>
                 <ul class="social-network social-circle">
                   <li>
                     <a href="#" class="icoFacebook" title="Facebook">
@@ -93,8 +78,8 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="icoLinkedin" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
+                    <a href="#" class="icoInstagram" title="Instagram">
+                      <i class="fa fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
