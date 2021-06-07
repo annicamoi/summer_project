@@ -19,6 +19,10 @@ import Members from "./pages/Members";
 import Clubterms from "./pages/Clubterms";
 import Licenses from "./pages/Licenses";
 import Prices from "./pages/Prices";
+import Board from "./pages/Board";
+import Equality from "./pages/Equality";
+import Competitions from "./pages/Competitions";
+import Communications from "./pages/Communications";
 
 class App extends Component {
   render() {
@@ -37,7 +41,11 @@ class App extends Component {
               <Route exact path="/members" component={Members} />
               <Route exact path="/clubterms" component={Clubterms} />
               <Route exact path="/licenses" component={Licenses} />
+              <Route exact path="/board" component={Board} />
               <Route exact path="/prices" component={Prices} />
+              <Route exact path="/equality" component={Equality} />
+              <Route exact path="/communications" component={Communications} />
+              <Route exact path="/competitions" component={Competitions} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/store" component={Store} />
               <Route exact path="/add" component={AddInstructor} />
