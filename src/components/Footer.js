@@ -17,13 +17,13 @@ const Footer = () => {
                       <a href="#"></a>
                     </li>
                     <li>
-                      <a href="#">Puhelinnumero</a>
+                      <a href="#">Puhelinnumero: 050-5232683</a>
                     </li>
                     <li>
-                      <a href="#">Osoite</a>
+                      <a href="#">Espoon TKD-seura ry PL 9 02101 Espoo</a>
                     </li>
                     <li>
-                      <a href="#">Sähköposti</a>
+                      <a href="#">Sähköposti: info@espoo.fi </a>
                     </li>
                   </ul>
                 </div>
