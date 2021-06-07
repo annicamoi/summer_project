@@ -31,7 +31,7 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     }}
   >
     {children}
-    &#x25bc;
+    &#x25be;
   </a>
 ));
 
@@ -51,31 +51,53 @@ export const NavigationBar = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
+              <Link className="navlink" to="/about">Taekwon-do</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
               <Dropdown>
                 <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
                   <Link className="navlink" to="/club">Seura</Link>
                 </Dropdown.Toggle>
                 <Dropdown.Menu >
-                  <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                  <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                  <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                  <Dropdown.Item eventKey="1" as={Link} to="/instructors">Ohjaajat</Dropdown.Item>
+                  <Dropdown.Item eventKey="1" as={Link} to="/board">Hallitus</Dropdown.Item>
+                  <Dropdown.Item eventKey="2" as={Link} to="/clubterms">Säännöt ja jäsenehdot</Dropdown.Item>
+                  <Dropdown.Item eventKey="2" as={Link} to="/equality">Yhdenvertaisuus</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link className="navlink" to="/schedule">Harjoitukset</Link>
+              <Dropdown>
+                <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                  <Link className="navlink" to="/members">Jäsenille</Link>
+                </Dropdown.Toggle>
+                <Dropdown.Menu >
+                  <Dropdown.Item eventKey="1" as={Link} to="/schedule">Harjoitusryhmät ja -ajat</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/prices">Hinnasto</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/licenses">Lisenssit</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/competitions">Kilpailutoiminta</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/communications">Jäsenviestintä</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link className="navlink" to="/about">Taekwon-do</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link className="navlink" to="/instructors">Ohjaajat</Link>
+              <Dropdown>
+                <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                  <Link className="navlink" to="/beginners">Aloita harrastus</Link>
+                </Dropdown.Toggle>
+                <Dropdown.Menu >
+                  <Dropdown.Item eventKey="1" as={Link} to="/beginnercourses">Alkeiskurssit</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/juniors">Nuoret</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/seniors">Aikuiset</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/beginnerinstructions">Ohjeita</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -91,5 +113,5 @@ export const NavigationBar = () => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </Styles>
+  </Styles >
 );
