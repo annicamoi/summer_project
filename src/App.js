@@ -15,6 +15,10 @@ import Schedule from "./pages/Schedule";
 import Store from "./pages/Store";
 import AddInstructor from "./pages/Add";
 import "./custom.scss";
+import Members from "./pages/Members";
+import Clubterms from "./pages/Clubterms";
+import Licenses from "./pages/Licenses";
+import Prices from "./pages/Prices";
 
 class App extends Component {
   render() {
@@ -30,6 +34,10 @@ class App extends Component {
               <Route exact path="/schedule" component={Schedule} />
               <Route exact path="/about" component={About} />
               <Route exact path="/instructors" component={Instructors} />
+              <Route exact path="/members" component={Members} />
+              <Route exact path="/clubterms" component={Clubterms} />
+              <Route exact path="/licenses" component={Licenses} />
+              <Route exact path="/prices" component={Prices} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/store" component={Store} />
               <Route exact path="/add" component={AddInstructor} />

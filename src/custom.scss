@@ -178,4 +178,25 @@ ul.social-network li {
   background-color: #f9f9f9;
 }
 
+/* Hakukentän muotoilu */
 
+.searchbox {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  color: #282828;
+  background-color: #fff;
+  border-color: #282828;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #282828;
+}
+
+/* Korttikokonaisuus */
+
+.cardlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
