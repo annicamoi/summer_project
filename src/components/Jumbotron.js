@@ -27,6 +27,9 @@ const Styles = styled.div`
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid={true} className="jumbo">
+      <video className="header_landscape" muted autoPlay loop style={{
+        position: "absolute", width: "100%", height: "100%", zIndex: "-1", left: "0", top: "0", right: "0", bottom: "0", objectFit: "cover"
+      }}><source src={header_landscape} type="video/mp4" /></video>
       <div className="overlay"></div>
       <Container>
         <h1>Taekwon-Do</h1>
