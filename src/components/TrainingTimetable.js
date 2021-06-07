@@ -29,6 +29,7 @@ const myEventsList = [
     { start: new Date(2021, 5, 6, 20), end: new Date(2021, 5, 6, 21), title: "20 Ulkotreenit" },
     { start: new Date(2021, 5, 6, 21), end: new Date(2021, 5, 6, 22), title: "21 Hallituksen kokous" },
     { start: new Date(2021, 5, 10, 18), end: new Date(2021, 5, 10, 19), title: " 18 Junnut" },
+    { start: new Date(2021, 5, 11, 15), end: new Date(2021, 5, 11, 16), title: " 15 Alkeiskurssi" },
     { start: new Date(2021, 5, 12, 12), end: new Date(2021, 5, 12, 13), title: "12 Vyökoe" },
     { start: new Date(2021, 5, 22, 20), end: new Date(2021, 5, 22, 21), title: "20 Vyökoe" },
 ];
@@ -44,6 +45,7 @@ const TrainingTimetable = () => {
                 startAccessor="start"
                 endAccessor="end"
                 style={{ height: 500 }}
+                views={['month', 'day']}
                 messages={{
                     date: 'Päivämäärä',
                     time: 'Aika',
