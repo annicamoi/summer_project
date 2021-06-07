@@ -60,10 +60,21 @@ a {
   border-radius: 0.25rem;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #282828;
+}
+
 .dropdown-item:hover,
 .dropdown-item:focus {
   color: white;
   background-color: #3500d3;
+}
+
+.dropdown-item:visited {
+  background-color: none;
 }
 
 /** footer **/
