@@ -44,6 +44,26 @@ const TrainingTimetable = () => {
                 startAccessor="start"
                 endAccessor="end"
                 style={{ height: 500 }}
+                messages={{
+                    date: 'Päivämäärä',
+                    time: 'Aika',
+                    event: 'Tapahtuma',
+                    allDay: 'Koko päivä',
+                    week: 'Viikko',
+                    work_week: 'Arkipäivät',
+                    day: 'Päivä',
+                    month: 'Kuukausi',
+                    previous: 'Edellinen',
+                    next: 'Seuraava',
+                    yesterday: 'Eilen',
+                    tomorrow: 'Huomenna',
+                    today: 'Tänään',
+                    agenda: 'Agenda',
+                    noEventsInRange: 'Ei tapahtumia tällä aikavälillä.',
+                    showMore: function showMore(total) {
+                        return "+" + total + " lisää";
+                    }
+                }}
             />
         </div>
     );
