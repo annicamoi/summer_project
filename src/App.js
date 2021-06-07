@@ -23,6 +23,11 @@ import Board from "./pages/Board";
 import Equality from "./pages/Equality";
 import Competitions from "./pages/Competitions";
 import Communications from "./pages/Communications";
+import Beginners from "./pages/Beginners";
+import Beginnercourses from "./pages/Beginnercourses";
+import Beginnerinstructions from "./pages/Beginnerinstructions";
+import Juniors from "./pages/Juniors";
+import Seniors from "./pages/Seniors";
 
 class App extends Component {
   render() {
@@ -43,6 +48,11 @@ class App extends Component {
               <Route exact path="/licenses" component={Licenses} />
               <Route exact path="/board" component={Board} />
               <Route exact path="/prices" component={Prices} />
+              <Route exact path="/beginners" component={Beginners} />
+              <Route exact path="/juniors" component={Juniors} />
+              <Route exact path="/seniors" component={Seniors} />
+              <Route exact path="/beginnercourses" component={Beginnercourses} />
+              <Route exact path="/beginnerinstructions" component={Beginnerinstructions} />
               <Route exact path="/equality" component={Equality} />
               <Route exact path="/communications" component={Communications} />
               <Route exact path="/competitions" component={Competitions} />

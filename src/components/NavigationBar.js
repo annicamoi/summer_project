@@ -87,6 +87,21 @@ export const NavigationBar = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
+              <Dropdown>
+                <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                  <Link className="navlink" to="/beginners">Aloita harrastus</Link>
+                </Dropdown.Toggle>
+                <Dropdown.Menu >
+                  <Dropdown.Item eventKey="1" as={Link} to="/beginnercourses">Alkeiskurssit</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/juniors">Nuoret</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/seniors">Aikuiset</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/beginnerinstructions">Ohjeita</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
               <Link className="navlink" to="/contact">Yhteystiedot</Link>
             </Nav.Link>
           </Nav.Item>
@@ -98,5 +113,5 @@ export const NavigationBar = () => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </Styles>
+  </Styles >
 );
