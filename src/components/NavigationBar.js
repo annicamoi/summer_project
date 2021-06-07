@@ -64,7 +64,6 @@ export const NavigationBar = () => (
                   <Dropdown.Item eventKey="1" as={Link} to="/instructors">Ohjaajat</Dropdown.Item>
                   <Dropdown.Item eventKey="2" as={Link} to="/clubterms">Säännöt ja jäsenehdot</Dropdown.Item>
                   <Dropdown.Item eventKey="3" as={Link} to="/licenses">Lisenssit</Dropdown.Item>
-                  <Dropdown.Item eventKey="3" as={Link} to="/prices">Hinnasto</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav.Link>
@@ -78,7 +77,7 @@ export const NavigationBar = () => (
                 <Dropdown.Menu >
                   <Dropdown.Item eventKey="1" as={Link} to="/schedule">Harjoitusajat</Dropdown.Item>
                   <Dropdown.Item eventKey="2" as={Link} to="/clubterms">Säännöt ja jäsenehdot</Dropdown.Item>
-                  <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" as={Link} to="/prices">Hinnasto</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav.Link>
