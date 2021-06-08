@@ -5,12 +5,12 @@ import Button from "react-bootstrap/Button";
 
 const CardSingle = () => {
     const [instructor, setInstructor] = useState();
-    let { id } = useParams();
+    let { _id } = useParams();
     let history = useHistory();
 
     useEffect(() => {
         if (!instructor) {
-            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find' + id).then((res) => setInstructor(res.data));
+            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find' + _id).then((res) => setInstructor(res.data));
         }
     });
 
@@ -28,11 +28,13 @@ const CardSingle = () => {
         instructorData = (
             <>
                 <div>
-                    <h1>{instructor.name}</h1>
+                    <h2>{instructor.name}</h2>
                     <img src="https://source.unsplash.com/42f0omhWez4" alt={instructor.name} />
                     {descLong}
                     <p>{instructor.title}</p>
                     <p>{instructor.rank}</p>
+                    <p>{instructor.email}</p>
+                    <p>{instructor.phone}</p>
                 </div>
                 <Button variant="outline-info" onClick={() => history.goBack()}>Takaisin listaukseen</Button>
             </>
