@@ -3,6 +3,7 @@
 $theme-colors: (
   "primary": white,
   "secondary": #282828,
+  "effect": #3500d3,
 );
 
 $font-family-sans-serif: "Work Sans", sans-serif !default;
@@ -60,17 +61,17 @@ a {
   border-radius: 0.25rem;
 }
 
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white;
+  background-color: #3500d3;
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: #282828;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: white;
-  background-color: #3500d3;
 }
 
 .dropdown-item:visited {
