@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home";
@@ -28,6 +28,9 @@ import Beginnercourses from "./pages/Beginnercourses";
 import Beginnerinstructions from "./pages/Beginnerinstructions";
 import Juniors from "./pages/Juniors";
 import Seniors from "./pages/Seniors";
+import Dashboard from "./components/Dashboard";
+import Preferences from "./components/Preferences";
+import Login from "./components/Login";
 
 class App extends Component {
   render() {
@@ -59,6 +62,9 @@ class App extends Component {
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/store" component={Store} />
               <Route exact path="/add" component={AddInstructor} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/preferences" component={Preferences} />
+              <Route exact path="/login" component={Login} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
