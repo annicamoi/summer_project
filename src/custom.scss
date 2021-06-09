@@ -231,6 +231,12 @@ ul.social-network li {
   text-decoration: underline;
 }
 
+.list-group-item:last-child {
+  border-top-width: 1px;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
 /* Footerin päälle tilaa, ettei footer mene containerin sisällön päälle */
 
 .container {
