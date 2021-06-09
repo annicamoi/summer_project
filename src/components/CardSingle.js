@@ -10,7 +10,7 @@ const CardSingle = () => {
 
     useEffect(() => {
         if (!instructor) {
-            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find' + id).then((res) => setInstructor(res.data));
+            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find/' + id).then((res) => setInstructor(res.data));
         }
     });
 
@@ -21,16 +21,13 @@ const CardSingle = () => {
     }
 
     if (instructor) {
-        let descLong = instructor.desc.map((des) => {
-            return <p>{des.desName}</p>
-        })
 
         instructorData = (
             <>
                 <div>
                     <h2>{instructor.name}</h2>
                     <img src="https://source.unsplash.com/42f0omhWez4" alt={instructor.name} />
-                    {descLong}
+                    <p>{instructor.desc}</p>
                     <p>{instructor.title}</p>
                     <p>{instructor.rank}</p>
                     <p>{instructor.email}</p>
