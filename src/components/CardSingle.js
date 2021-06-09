@@ -5,12 +5,12 @@ import Button from "react-bootstrap/Button";
 
 const CardSingle = () => {
     const [instructor, setInstructor] = useState();
-    let { _id } = useParams();
+    let { id } = useParams();
     let history = useHistory();
 
     useEffect(() => {
         if (!instructor) {
-            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find' + _id).then((res) => setInstructor(res.data));
+            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find' + id).then((res) => setInstructor(res.data));
         }
     });
 
