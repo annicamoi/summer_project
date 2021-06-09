@@ -9,3 +9,7 @@ button {
   background-color: #0c0032;
   color: white;
 }
+
+input {
+  margin-right: 2rem;
+}
