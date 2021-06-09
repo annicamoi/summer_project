@@ -28,7 +28,7 @@ const Instructors = () => {
   return (
     <div>
       <Switch>
-        <Route path={`${url}/:_id`}>
+        <Route path={`${url}/:id`}>
           <CardSingle />
         </Route>
         <Route path={url} exact>
