@@ -33,16 +33,27 @@ const Footer = () => {
                   <h4>Sidosryhmät</h4>
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">MyClub - linkki </a>
+                      <a
+                        href="https://espoontkd.myclub.fi/login"
+                        target="blank"
+                      >
+                        MyClub{" "}
+                      </a>
                     </li>
                     <li>
-                      <a href="#">SITF Jäsenseura - linkki</a>
+                      <a href="http://www.taekwon-do.fi/" target="_blank">
+                        SITF Jäsenseura
+                      </a>
                     </li>
                     <li>
-                      <a href="#">ITF - linkki</a>
+                      <a href="https://itftkd.sport/" target="_blank">
+                        ITF
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Espoon TKD</a>
+                      <a href="http://www.teamespoo.com/" target="_blank">
+                        Espoon TKD
+                      </a>
                     </li>
                     <li>
                       <a href="#">Privacy Policy</a>
@@ -55,7 +66,12 @@ const Footer = () => {
                   <h4>Tutustu meihin</h4>
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">Youtube - linkki</a>
+                      <a
+                        href="https://www.youtube.com/channel/UCqE1rP6Rma_s80_DI4OquMg"
+                        target="_blank"
+                      >
+                        Youtube
+                      </a>
                     </li>
                     <li>
                       <a href="#">Uutiset ja tiedotteet</a>
@@ -73,12 +89,22 @@ const Footer = () => {
                 <h4>Seuraa meitä</h4>
                 <ul class="social-network social-circle">
                   <li>
-                    <a href="#" class="icoFacebook" title="Facebook">
+                    <a
+                      href="https://www.facebook.com/EspoonTKD"
+                      target="_blank"
+                      class="icoFacebook"
+                      title="Facebook"
+                    >
                       <i class="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="icoInstagram" title="Instagram">
+                    <a
+                      href="https://www.instagram.com/espoontkdseura/"
+                      target="_blank"
+                      class="icoInstagram"
+                      title="Instagram"
+                    >
                       <i class="fa fa-instagram"></i>
                     </a>
                   </li>
