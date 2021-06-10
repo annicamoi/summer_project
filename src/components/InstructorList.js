@@ -6,7 +6,7 @@ const InstructorList = ({ instructors }) => {
         <div className="cardlist">
             {instructors.map((instructor) => (
                 <InstructorCard
-                    key={instructor.id}
+                    key={instructor._id}
                     name={instructor.name}
                     img={instructor.img}
                     title={instructor.title}
@@ -14,7 +14,7 @@ const InstructorList = ({ instructors }) => {
                     desc={instructor.desc}
                     email={instructor.email}
                     phone={instructor.phone}
-                    link={`${instructor.id}`}
+                    link={`${instructor._id}`}
                 />
             ))}
         </div>
