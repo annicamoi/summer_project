@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home";
@@ -32,49 +32,76 @@ import Dashboard from "./components/Dashboard";
 import Preferences from "./components/Preferences";
 import Login from "./components/Login";
 import AddNews from "./pages/AddNews";
+import Register from "./components/Register";
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Router>
-          <Jumbotron />
-          <NavigationBar />
-          <Layout>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/club" component={Club} />
-              <Route exact path="/schedule" component={Schedule} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/instructors" component={Instructors} />
-              <Route exact path="/members" component={Members} />
-              <Route exact path="/clubterms" component={Clubterms} />
-              <Route exact path="/licenses" component={Licenses} />
-              <Route exact path="/board" component={Board} />
-              <Route exact path="/prices" component={Prices} />
-              <Route exact path="/beginners" component={Beginners} />
-              <Route exact path="/juniors" component={Juniors} />
-              <Route exact path="/seniors" component={Seniors} />
-              <Route exact path="/beginnercourses" component={Beginnercourses} />
-              <Route exact path="/beginnerinstructions" component={Beginnerinstructions} />
-              <Route exact path="/equality" component={Equality} />
-              <Route exact path="/communications" component={Communications} />
-              <Route exact path="/competitions" component={Competitions} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/store" component={Store} />
-              <Route exact path="/add" component={AddInstructor} />
-              <Route exact path="/addnews" component={AddNews} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/preferences" component={Preferences} />
-              <Route exact path="/login" component={Login} />
-              <Route component={NoMatch} />
-            </Switch>
-          </Layout>
-          <Footer />
-        </Router>
-      </React.Fragment>
-    );
-  }
+function App() {
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
+        "https://hidden-falls-56490.herokuapp.com/user",
+        {
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
+
+      const content = await response.json();
+
+      setName(content.name);
+    })();
+  });
+
+  // class App extends Component {
+  //   render() {
+  return (
+    <React.Fragment>
+      <Router>
+        <Jumbotron />
+        <NavigationBar name={name} setName={setName} />
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/club" component={Club} />
+            <Route exact path="/schedule" component={Schedule} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/instructors" component={Instructors} />
+            <Route exact path="/members" component={Members} />
+            <Route exact path="/clubterms" component={Clubterms} />
+            <Route exact path="/licenses" component={Licenses} />
+            <Route exact path="/board" component={Board} />
+            <Route exact path="/prices" component={Prices} />
+            <Route exact path="/beginners" component={Beginners} />
+            <Route exact path="/juniors" component={Juniors} />
+            <Route exact path="/seniors" component={Seniors} />
+            <Route exact path="/beginnercourses" component={Beginnercourses} />
+            <Route
+              exact
+              path="/beginnerinstructions"
+              component={Beginnerinstructions}
+            />
+            <Route exact path="/equality" component={Equality} />
+            <Route exact path="/communications" component={Communications} />
+            <Route exact path="/competitions" component={Competitions} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/store" component={Store} />
+            <Route exact path="/add" component={AddInstructor} />
+            <Route exact path="/addnews" component={AddNews} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/preferences" component={Preferences} />
+            <Route
+              path="/login"
+              component={() => <Login setName={setName} />}
+            />
+            <Route path="/register" component={Register} />
+            <Route component={NoMatch} />
+          </Switch>
+        </Layout>
+        <Footer />
+      </Router>
+    </React.Fragment>
+  );
 }
 
 export default App;

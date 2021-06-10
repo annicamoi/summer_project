@@ -3,9 +3,8 @@ import Sidebar from "../components/Sidebar";
 
 export const Home = () => (
   <div className="wrapper">
-    <div className="sidebar">
-      <Sidebar />
-    </div>
+    <div className="sidebar"></div>
+    <Sidebar />
     <div className="hometext">
       <h2>Tervetuloa Taekwon-Don pariin! </h2>
       <p>

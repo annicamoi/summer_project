@@ -239,10 +239,10 @@ ul.social-network li {
 
 /* Footerin päälle tilaa, ettei footer mene containerin sisällön päälle */
 
-.container {
-  padding-bottom: 100px;
-  padding-right: 50px;
-}
+// .container {
+//   padding-bottom: 100px;
+//   padding-right: 50px;
+// }
 
 /* Navigoinnin linkeistä alleviivaukset pois */
 
@@ -297,70 +297,41 @@ a {
 
 /*Etusivun muotoilu */
 
-// .sidebar {
-//   height: 1100px;
-//   width: 200px;
-//   position: absolute;
-//   float: right;
-//   top: 50;
-//   padding: 0;
-//   background-color: #282828 !important;
-//   color: white;
-//   margin-left: 10px;
-//   display: flex;
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  // background-image: url("https://source.unsplash.com/HYDUXzWSF5I/1600x900");
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+// #sidebar {
+//   min-width: 250px;
+//   max-width: 250px;
+//   min-height: 100vh;
+// // }
+// a[data-toggle="collapse"] {
+//   position: relative;
 // }
 
-// .sidebar div {
-//   padding: 8px;
-//   font-size: 12px;
+// .dropdown-toggle::after {
 //   display: block;
+//   position: absolute;
+//   top: 50%;
+//   right: 20px;
+//   transform: translateY(-50%);
 // }
-
-// .hometext {
-//   margin-right: 150px;
-//   text-align: left justify;
-//   padding-right: 2px;
-// }
-// /* On screens that are less than 700px wide, make the sidebar into a topbar */
-// @media screen and (max-width: 700px) {
-//   .sidebar {
-//     width: 100%;
-//     height: auto;
-//     position: relative;
+// @media (max-width: 768px) {
+//   #sidebar {
+//     margin-left: -250px;
 //   }
-//   .sidebar a {
-//     float: left;
-//   }
-//   div.content {
+//   #sidebar.active {
 //     margin-left: 0;
 //   }
 // }
-
-// /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-// @media screen and (max-width: 400px) {
-//   .sidebar a {
-//     text-align: center;
-//     float: none;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   body {
-//     padding-top: 0;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   body {
-//     margin-right: 232px;
-//   }
-// }
-
-.sidebar .fixed-right {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  height: 1100px;
-}
