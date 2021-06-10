@@ -28,6 +28,16 @@ function AddNews() {
 
 
 
+    const [info, setInfo] = useState([{
+
+        title: null,
+
+        text: null
+
+    }]);
+
+
+
     useEffect(() => {
 
         fetch("https://hidden-falls-56490.herokuapp.com/news").then(res => {
@@ -88,6 +98,70 @@ function AddNews() {
 
 
 
+    function handleEdit(event) {
+
+        event.preventDefault();
+
+
+
+        const editArticle = {
+
+            targetId: event.target.id,
+
+            title: input.title,
+
+            text: input.text
+
+        }
+
+        axios.post("//localhost:4000/editnews", editArticle);
+
+    }
+
+
+
+    function handleRemove(event) {
+
+        event.preventDefault();
+
+        const removedArticle = {
+
+            targetId: event.target.id
+
+        }
+
+        axios.post("//localhost:4000/removenews", removedArticle);
+
+    }
+
+
+
+    function handleFields(event) {
+
+        fetch(`//localhost:4000/newsinfo?_id=${event.target.id}`).then(res => {
+
+            if (res.ok) {
+
+                return res.json();
+
+            }
+
+        }).then(jsonInfo => {
+
+            setInfo(jsonInfo);
+
+            console.log(jsonInfo);
+
+            input.title = jsonInfo.title;
+
+            input.text = jsonInfo.text;
+
+        });
+
+    }
+
+
+
     return <div className="container">
 
         <h3>Lisää uutinen</h3>
@@ -98,7 +172,13 @@ function AddNews() {
 
             <div>
 
-                <h4>{article.name}</h4>
+                <h4>{article.title}</h4>
+
+                <button onClick={handleEdit} id={article._id} className="btn btn-lg btn-info">Edit</button>
+
+                <button onClick={handleRemove} id={article._id} className="btn btn-lg btn-info">Remove</button>
+
+                <button onClick={handleFields} id={article._id} className="btn btn-lg btn-info">Fields</button>
 
             </div>
 
