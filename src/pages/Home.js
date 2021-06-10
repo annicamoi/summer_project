@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import Sidebar from "../components/Sidebar";
 
-export const Home = () => {
-  return (
-    <div>
-      <h2>Tervetuloa Taekwon-Don pariin! </h2>
+export const Home = () => (
+  <div className="wrapper">
+    <div className="sidebar">
+      <Sidebar />
+    </div>
+    <div className="hometext">
+      <h2>Tervetuloa Taekwon-Don pariin! </h2>
       <p>
         Lorizzle things dolor sizzle amizzle, shut the shizzle up adipiscing elit.
         Nullizzle crazy velit, yo volutpizzle, suscipizzle quis, fo shizzle vel,
@@ -33,8 +37,21 @@ export const Home = () => {
         izzle, sapizzle. Ut boofron magna vizzle ipsum. Things ante crazy,
         suscipit bow wow wow, vestibulizzle et, rutrum bizzle, that's the shizzle.
         Maurizzle a yo. Black sizzle magna sizzle amet risizzle iaculizzle phat.
-        Daahng dawg break it down. Aliquam sagittis cool ghetto mauris.   
+        Daahng dawg break it down. Aliquam sagittis cool ghetto mauris. Vestibulum
+        ante primis i saw beyonces tizzles and my pizzle went crizzle faucibizzle
+        orci luctizzle ma nizzle ultrices that's the shizzle cubilia Curae;
+        Crackalackin bizzle. Pellentesque go to hizzle morbi tristique senectus
+        netizzle ass malesuada away ac turpizzle egestizzle. Owned tempor
+        hendrerizzle velizzle. Aliquam crunk ass. Vivamus tortor enim, scelerisque
+        ac, go to hizzle a, fringilla vel, arcu. Nulla elit. Get down get down i
+        saw beyonces tizzles and my pizzle went crizzle, nizzle at pharetra
+        shiznit, magna you son of a bizzle pimpin' neque, nizzle phat urna dolor
+        quizzle break it down. Vivamizzle tellus neque, ultricizzle ut, fo shizzle
+        at, nizzle, leo. Sure pimpin' sem, gangsta sizzle amet, interdum boofron,
+        dignissizzle phat, arcu. Aenizzle egizzle that's the shizzle izzle fo
+        shizzle ullamcorper own yo'. Donec quam. Mauris shit urna, tempor hizzle,
+        scelerisque venenatizzle, owned nec, felizzle. Etizzle gravida.     
       </p>
     </div>
-  );
-};
+  </div>
+);

@@ -39,4 +39,5 @@ const Instructors = () => {
     </div>
   );
 };
+
 export default Instructors;
