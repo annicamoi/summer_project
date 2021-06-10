@@ -241,6 +241,7 @@ ul.social-network li {
 
 .container {
   padding-bottom: 100px;
+  padding-right: 50px;
 }
 
 /* Navigoinnin linkeistä alleviivaukset pois */
@@ -297,15 +298,16 @@ a {
 /*Etusivun muotoilu */
 
 .sidebar {
-  height: 600px;
-  width: 300px;
+  height: 1100px;
+  width: 200px;
   position: absolute;
+  float: right;
   top: 50;
-  right: 0;
-  padding: 10px;
-  background-color: #282828;
+  padding: 0;
+  background-color: #282828 !important;
   color: white;
   margin-left: 10px;
+  display: flex;
 }
 
 .sidebar div {
@@ -316,6 +318,28 @@ a {
 
 .hometext {
   margin-right: 150px;
-  text-align: left;
-  padding-right: 10px;
+  text-align: left justify;
+  padding-right: 2px;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }

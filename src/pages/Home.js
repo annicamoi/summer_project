@@ -50,8 +50,8 @@ export const Home = () => (
         at, nizzle, leo. Sure pimpin' sem, gangsta sizzle amet, interdum boofron,
         dignissizzle phat, arcu. Aenizzle egizzle that's the shizzle izzle fo
         shizzle ullamcorper own yo'. Donec quam. Mauris shit urna, tempor hizzle,
-        scelerisque venenatizzle, owned nec, felizzle. Etizzle gravida.
-    </p>
+        scelerisque venenatizzle, owned nec, felizzle. Etizzle gravida.     
+      </p>
     </div>
   </div>
 );
