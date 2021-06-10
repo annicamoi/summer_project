@@ -13,7 +13,7 @@ const InstructorCard = ({ name, img, link, title, rank, desc }) => {
     return (
         <div>
             <Card style={{ width: '18rem', margin: "2rem" }}>
-                <img src={"https://hidden-falls-56490.herokuapp.com/images/" + img} alt={name} />
+                <img src={"https://hidden-falls-56490.herokuapp.com/images/" + img} alt={name} width="286" height="280" />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>

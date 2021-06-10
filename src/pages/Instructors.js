@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import SearchInstructor from "../components/SearchInstructor";
 import CardSingle from "../components/CardSingle";
+import InstructorSingle from "../components/InstructorSingle";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import InstructorList from '../components/InstructorList';
 
@@ -28,8 +29,8 @@ const Instructors = () => {
   return (
     <div>
       <Switch>
-        <Route path={`${url}/:id`}>
-          <CardSingle />
+        <Route path={`${url}/:_id`}>
+          <InstructorSingle />
         </Route>
         <Route path={url} exact>
           <SearchInstructor search={searchValueHandler} />
