@@ -293,3 +293,29 @@ a {
   outline: 0;
   box-shadow: none;
 }
+
+/*Etusivun muotoilu */
+
+.sidebar {
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  top: 50;
+  right: 0;
+  padding: 10px;
+  background-color: #282828;
+  color: white;
+  margin-left: 10px;
+}
+
+.sidebar div {
+  padding: 8px;
+  font-size: 12px;
+  display: block;
+}
+
+.hometext {
+  margin-right: 150px;
+  text-align: left;
+  padding-right: 10px;
+}
