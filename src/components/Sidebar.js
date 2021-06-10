@@ -22,7 +22,7 @@ const Sidebar = () => {
                     <h6>{news.title}</h6>
                     <p>{news.text}</p>
                 </div>
-            ))};
+            ))}
         </div>
     );
 };
