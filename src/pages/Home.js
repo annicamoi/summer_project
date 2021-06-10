@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 export const Home = () => (
   <div>
     <h2>Tervetuloa Taekwon-Don pariin! </h2>
