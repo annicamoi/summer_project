@@ -13,7 +13,7 @@ const Instructors = () => {
 
   useEffect(() => {
     axios
-      .get("https://agile-beach-68747.herokuapp.com/instructors")
+      .get("https://hidden-falls-56490.herokuapp.com/instructors")
       .then((res => setInstructors(res.data)));
   }, []);
 

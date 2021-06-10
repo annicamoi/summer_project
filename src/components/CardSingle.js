@@ -10,7 +10,7 @@ const CardSingle = () => {
 
     useEffect(() => {
         if (!instructor) {
-            axios.get('https://agile-beach-68747.herokuapp.com/instructors/find/' + id).then((res) => setInstructor(res.data));
+            axios.get('https://hidden-falls-56490.herokuapp.com/instructors/find/' + id).then((res) => setInstructor(res.data));
         }
     });
 
@@ -26,7 +26,7 @@ const CardSingle = () => {
             <>
                 <div>
                     <h2>{instructor.name}</h2>
-                    <img src="https://source.unsplash.com/42f0omhWez4" alt={instructor.name} />
+                    <img src={"https://hidden-falls-56490.herokuapp.com/images/" + instructor.img} alt={instructor.name} />
                     <p>{instructor.desc}</p>
                     <p>{instructor.title}</p>
                     <p>{instructor.rank}</p>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom";
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
-const InstructorCard = ({ name, link, title, rank, desc }) => {
+const InstructorCard = ({ name, img, link, title, rank, desc }) => {
     const truncate = (str, no_words) => {
         return str.split(" ").splice(0, no_words).join(" ");
     };
@@ -13,7 +13,7 @@ const InstructorCard = ({ name, link, title, rank, desc }) => {
     return (
         <div>
             <Card style={{ width: '18rem', margin: "2rem" }}>
-                <img src="https://source.unsplash.com/42f0omhWez4" alt={name} />
+                <img src={"https://hidden-falls-56490.herokuapp.com/images/" + img} alt={name} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
