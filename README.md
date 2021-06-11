@@ -4,9 +4,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installed packages
 
-Some frontend packages are missing from this list currently.
+Frontend packages:
 
-Backend boys installed: (bootstrap, react-router-dom,) axios BACKEND: express, mongoose, cors
+- npm install bootstrap
+- npm install cdbreact
+- npm install date-fns
+- npm install react
+- npm install react-big-calendar
+- npm install react-bootstrap
+- npm install react-dom
+- npm install react-router-bootstrap
+- npm install react-router-dom
+- npm install react-scripts
+- npm install styled components
+
+Backend :  
+
+For front: bootstrap, react-router-dom, axios 
+
+BACKEND: express, mongoose, cors, typescript, @types/react-router-dom, 
 
 possibly needed: nodemon package(to run server.js - you might already have it), Mongo Shell
 
@@ -65,14 +81,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This app is currently deployed at Netlify & Heroku : https://relaxed-cray-621554.netlify.app/
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
