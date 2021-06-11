@@ -300,38 +300,32 @@ a {
 .wrapper {
   display: flex;
   align-items: stretch;
-  // background-image: url("https://source.unsplash.com/HYDUXzWSF5I/1600x900");
 }
 
 .sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  width: 30%;
+  // background-image: url("https://source.unsplash.com/HYDUXzWSF5I/1600x900");
+  text-decoration: white;
 }
 
 #sidebar.active {
   margin-left: -250px;
 }
-// #sidebar {
-//   min-width: 250px;
-//   max-width: 250px;
-//   min-height: 100vh;
-// // }
-// a[data-toggle="collapse"] {
-//   position: relative;
-// }
 
-// .dropdown-toggle::after {
-//   display: block;
-//   position: absolute;
-//   top: 50%;
-//   right: 20px;
-//   transform: translateY(-50%);
-// }
-// @media (max-width: 768px) {
-//   #sidebar {
-//     margin-left: -250px;
-//   }
-//   #sidebar.active {
-//     margin-left: 0;
-//   }
-// }
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  // }
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
