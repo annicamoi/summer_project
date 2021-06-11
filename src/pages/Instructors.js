@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import SearchInstructor from "../components/SearchInstructor";
-import CardSingle from "../components/CardSingle";
 import InstructorSingle from "../components/InstructorSingle";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import InstructorList from '../components/InstructorList';

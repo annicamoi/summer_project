@@ -114,7 +114,7 @@ function AddNews() {
 
         }
 
-        axios.post("//localhost:4000/editnews", editArticle);
+        axios.post("https://hidden-falls-56490.herokuapp.com/editnews", editArticle);
 
     }
 
@@ -130,7 +130,7 @@ function AddNews() {
 
         }
 
-        axios.post("//localhost:4000/removenews", removedArticle);
+        axios.post("https://hidden-falls-56490.herokuapp.com/removenews", removedArticle);
 
     }
 
@@ -138,7 +138,7 @@ function AddNews() {
 
     function handleFields(event) {
 
-        fetch(`//localhost:4000/newsinfo?_id=${event.target.id}`).then(res => {
+        fetch(`https://hidden-falls-56490.herokuapp.com/newsinfo?_id=${event.target.id}`).then(res => {
 
             if (res.ok) {
 
